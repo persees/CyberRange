@@ -1,14 +1,24 @@
 import smtplib
+import argparse
 
-sender = "test@example.com"
-receivers = ["labworks01@outlook.com"]
-message = """From: Test <test@example.com>
-To: labworks01 <labworks01@outlook.com>
-Subject: SMTP email example
+parser = argparse.ArgumentParser(description='Send emails')
+parser.add_argument("-s", "--sender")
+parser.add_argument("-r", "--receiver")
 
-This is a sample test
+args = parser.parse_args()
 
-"""
+sender = args.sender
+receivers = [args.receiver]
+message = """From: Test <{}>
+To: Test <{}>
+Subject: Company credentials expired
+
+This is a friendly reminder that your company credentials are expiring in 5 days.
+
+Please update your password so you don't lose access to your account:
+
+
+""".format(sender, receivers)
 
 try:
     smtpObject = smtplib.SMTP("localhost")

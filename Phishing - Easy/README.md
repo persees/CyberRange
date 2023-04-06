@@ -1,3 +1,5 @@
+# Requirements
+- Target machine connected to Microsoft Defender Endpoint
 
 # Configuration
 
@@ -11,4 +13,6 @@ sudo systemctl enable postfix
 sudo systemctl start postfix
 ```
 
-
+## SendMail.py script
+Sending an email from the attacker machine to the target machine
+`sendMail.py -s <sender@mail> -r <receiver@mail>`
