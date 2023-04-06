@@ -4,4 +4,5 @@ CyberRange is a collection of cybersecurity exercises designed for Purple Teams.
 
 ## Repository navigation
 The exercises are organized into folders, each containing all the instructions needed to run the exercise. Simply navigate to the folder of the exercise you want to try and follow the instructions provided.
+
 By using CyberRange exercises, your team can improve their skills in a safe environment and be better prepared to defend against real-world cyber threats.
