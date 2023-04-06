@@ -16,7 +16,7 @@ Subject: Company credentials expired
 This is a friendly reminder that your company credentials are expiring in 5 days.
 
 Please update your password so you don't lose access to your account:
-
+    http://notmaliciousatall.com/insertYourCredentials.html
 
 """.format(sender, receivers)
 
